@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Inter-Black";
+  src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+  font-family: "Inter-Black";
+}
+
+.card {
+  margin: 0 auto;
+  margin-top: 57px;
+  margin-bottom: 57px;
+  width: 315px;
+  padding-top: 47px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card--tanya {
+  display: none;
+}
+
+.card__img {
+  width: 200px;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card__content {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.card__text {
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.card__name {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.card__rank {
+  font-size: 0.8rem;
+}
+.card__sliders {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border-radius: 20px;
+  top: 230px;
+}
+
+.card__slid-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 8px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.card__slid-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.card__background-container {
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+}
+
+.card__background {
+  width: 250px;
+  height: 250px;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    width: 815px;
+    height: 350px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 190px;
+    margin-bottom: 190px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    position: relative;
+  }
+
+  .card__img-container {
+    width: 300px;
+  }
+  .card__img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card__content {
+    position: absolute;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+    top: 90px;
+    left: 0;
+    width: 540px;
+    text-align: left;
+  }
+
+  .card__text {
+    font-size: 1.6rem;
+    line-height: 33px;
+    margin-bottom: 15px;
+  }
+
+  .card__name {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .card__rank {
+    display: inline-block;
+  }
+
+  .card--tanya {
+    display: none;
+  }
+
+  .card__sliders {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    top: 335px;
+    right: 210px;
+  }
+
+  .card__background-container {
+    width: 1050px;
+    height: 540px;
+    top: -98px;
+    left: -115px;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.4);
+  }
+  .card__background {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: 60px;
+    bottom: 60px;
+  }
+}
